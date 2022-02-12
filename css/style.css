@@ -88,3 +88,133 @@ body {
   border: 2px solid #8dc63f;
   color: #8dc63f;
 }
+
+/* Barbearia */
+.barbearia {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.beard {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #076816;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.beard::before {
+  content: "";
+  height: 74px;
+  width: 1px;
+  background: #076816;
+  display: block;
+  margin: 8px auto;
+}
+
+.title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.25rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #080f08;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.card {
+  width: 206px;
+  height: 223px;
+  background: rgba(192, 199, 183, 0.95);
+  align-self: flex-end;
+  margin: 10px auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.card p {
+  color: #434444;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.card a {
+  color: #080f08;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding: 10px;
+}
+
+.mini-card {
+  width: 40px;
+  height: 40px;
+}
+
+.btn {
+  height: 30px;
+  background: rgba(192, 199, 183, 0.95);
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+}
+
+.btn-corte {
+  width: 53px;
+}
+
+.btn-barba {
+  width: 137px;
+}
+
+.btn-escova {
+  width: 134px;
+}
+
+.btn-colorize {
+  width: 88px;
+}
+
+/* Grid */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 240px 240px;
+  grid-template-areas:
+    "lustre corte barba"
+    "lustre colorize escova";
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.cortes-info {
+  grid-area: lustre;
+  background: url("../img/barber.png") no-repeat center;
+  background-size: cover;
+  max-height: 480px;
+  display: flex;
+}
+.corte {
+  grid-area: corte;
+}
+
+.barba {
+  grid-area: barba;
+}
+
+.escova {
+  grid-area: escova;
+}
+
+.color {
+  grid-area: colorize;
+}
