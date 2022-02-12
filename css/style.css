@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
 
+body {
+  height: 5000px;
+}
+
 /* Header */
 #header {
   padding: 10px calc((100% - 960px) / 2);
@@ -28,4 +32,59 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Intro */
+.intro {
+  width: 100%;
+  height: 700px;
+  background: url("../img/intro.png") no-repeat center;
+  background-size: cover;
+}
+
+.intro-infos {
+  padding: 10px calc((100% - 960px) / 2);
+  text-align: center;
+}
+
+.intro-infos img {
+  height: 160px;
+  margin-top: 80px;
+}
+
+.intro-infos h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.25rem;
+  color: #fff;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.intro-infos p {
+  color: #fff;
+  line-height: 2rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.call-buttons {
+  margin-top: 80px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+}
+
+.btn-agendar {
+  height: 56px;
+  width: 199px;
+  background: #8dc63f;
+  color: #364101;
+}
+
+.btn-contato {
+  height: 56px;
+  width: 179px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: 40px;
+  border: 2px solid #8dc63f;
+  color: #8dc63f;
 }
