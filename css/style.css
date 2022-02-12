@@ -94,16 +94,16 @@ body {
   padding: 10px calc((100% - 960px) / 2);
 }
 
-.beard {
+.pre-title-style {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 14px;
   color: #076816;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
-.beard::before {
+.pre-title-style::before {
   content: "";
   height: 74px;
   width: 1px;
@@ -217,4 +217,37 @@ body {
 
 .color {
   grid-area: colorize;
+}
+
+/* Team */
+
+.team {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.grid-team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.team-description {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.team-description h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.team-description p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #080f08;
 }
