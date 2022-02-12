@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* Header */
+#header {
+  padding: 10px calc((100% - 960px) / 2);
+  background: #080f08;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-links {
+  display: flex;
+}
+
+.menu-links a {
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  color: #dbdcdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
