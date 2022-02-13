@@ -1,0 +1,347 @@
+/* Header */
+#header {
+  padding: 10px calc((100% - 960px) / 2);
+  background: #080f08;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-links {
+  display: flex;
+}
+
+.menu-links a {
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  color: #dbdcdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Intro */
+.intro {
+  width: 100%;
+  height: 700px;
+  background: url("../img/intro.png") no-repeat center;
+  background-size: cover;
+}
+
+.intro-infos {
+  padding: 10px calc((100% - 960px) / 2);
+  text-align: center;
+}
+
+.intro-infos img {
+  height: 160px;
+  margin-top: 80px;
+}
+
+.intro-infos h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.25rem;
+  color: #fff;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.intro-infos p {
+  color: #fff;
+  line-height: 2rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.call-buttons {
+  margin-top: 80px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+}
+
+.btn-agendar {
+  height: 56px;
+  width: 199px;
+  background: #8dc63f;
+  color: #364101;
+}
+
+.btn-contato {
+  height: 56px;
+  width: 179px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: 40px;
+  border: 2px solid #8dc63f;
+  color: #8dc63f;
+}
+
+/* Barbearia */
+.barbearia {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.pre-title-style {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #076816;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.pre-title-style::before {
+  content: "";
+  height: 74px;
+  width: 1px;
+  background: #076816;
+  display: block;
+  margin: 8px auto;
+}
+
+.title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.25rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #080f08;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.card {
+  width: 206px;
+  height: 223px;
+  background: rgba(192, 199, 183, 0.95);
+  align-self: flex-end;
+  margin: 10px auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.card p {
+  color: #434444;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.card a {
+  color: #080f08;
+  font-weight: bold;
+  font-size: 1.125rem;
+  padding: 10px;
+}
+
+.mini-card {
+  width: 40px;
+  height: 40px;
+}
+
+.btn {
+  height: 30px;
+  background: rgba(192, 199, 183, 0.95);
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+}
+
+.btn-corte {
+  width: 53px;
+}
+
+.btn-barba {
+  width: 137px;
+}
+
+.btn-escova {
+  width: 134px;
+}
+
+.btn-colorize {
+  width: 88px;
+}
+
+/* Grid */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 240px 240px;
+  grid-template-areas:
+    "lustre corte barba"
+    "lustre colorize escova";
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.cortes-info {
+  grid-area: lustre;
+  background: url("../img/barber.png") no-repeat center;
+  background-size: cover;
+  max-height: 480px;
+  display: flex;
+}
+.corte {
+  grid-area: corte;
+}
+
+.barba {
+  grid-area: barba;
+}
+
+.escova {
+  grid-area: escova;
+}
+
+.color {
+  grid-area: colorize;
+}
+
+/* Team */
+
+.team {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.grid-team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.team-description {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.team-description h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.team-description p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #080f08;
+}
+
+/* Contato */
+
+.contato {
+  padding: 10px calc((100% - 960px) / 2);
+  margin-top: 40px;
+}
+
+.grid-contato {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.card-contato {
+  width: 400px;
+  height: 494px;
+  background: #c0c7b7;
+  grid-column: 1;
+}
+
+.contato-info span {
+  font-family: "Raleway", sans-serif;
+  color: #080f08;
+  text-align: center;
+}
+
+.contato-info img {
+  margin-top: 40px;
+  margin-right: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.redes {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.redes img {
+  margin-right: 40px;
+}
+
+.form {
+  grid-column: 2;
+  font-family: "Raleway", sans-serif;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input,
+textarea {
+  border: 2px solid #076816;
+  margin-bottom: 20px;
+}
+
+.btn-enviar {
+  border: 2px solid #8dc63f;
+  background: #076816;
+  color: #fff;
+  font-size: 14px;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  top: 40px;
+  right: 100px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  width: 100%;
+  height: 100px;
+  background: #8dc63f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+/* Javascript anima scroll */
+[data-anime="scroll"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+[data-anime="scroll"].ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

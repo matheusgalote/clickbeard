@@ -18,6 +18,10 @@
         <li><a href="#contato">Contato</a></li>
         <li><a href="#team">Barbeiros</a></li>
       </ul>
+      <div class="login">
+        <a class="check" data-modal="abrir-login">Login</a>
+        <a class="check" data-modal="abrir-signup">Registrar</a>
+      </div>
     </nav>
   </header>
 
@@ -171,6 +175,34 @@
   <footer class="footer">
     <p>ClickBeard - Todos os direitos reservados</p>
   </footer>
+
+  <section class="modal-container" data-modal="login">
+    <div class="modal">
+      <button class="fechar" data-modal="fechar-login">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+  
+  <section class="modal-container" data-modal="signup">
+    <div class="modal">
+      <button class="fechar" data-modal="fechar-signup">X</button>
+      <form action="">
+        <label for="name">Nome</label>
+        <input type="text" for="name" id="name">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Criar Conta</button>
+      </form>
+    </div>
+  </section>
 
   <script type="module" src="js/script.js"></script>
 </body>
