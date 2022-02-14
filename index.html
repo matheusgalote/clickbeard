@@ -179,11 +179,11 @@
   <section class="modal-container" data-modal="login">
     <div class="modal">
       <button class="fechar" data-modal="fechar-login">X</button>
-      <form action="">
-        <label for="email">Email</label>
-        <input type="text" for="email" id="email">
-        <label for="senha">Senha</label>
-        <input type="password" for="senha" id="senha">
+      <form action="php-login/authenticate.php" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required>
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" required>
         <button type="submit">Entrar</button>
       </form>
     </div>
