@@ -30,6 +30,7 @@ $stmt->close();
 		<title>Profile Page</title>
 		<link href="../css/login.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 <body>
 	<section class="loggedin"> 
