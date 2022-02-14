@@ -192,13 +192,13 @@
   <section class="modal-container" data-modal="signup">
     <div class="modal">
       <button class="fechar" data-modal="fechar-signup">X</button>
-      <form action="">
-        <label for="name">Nome</label>
-        <input type="text" for="name" id="name">
+      <form action="php-login/register.php" method="post">
+        <label for="username">Nome</label>
+        <input type="text" name="username" id="username">
         <label for="email">Email</label>
-        <input type="text" for="email" id="email">
-        <label for="senha">Senha</label>
-        <input type="password" for="senha" id="senha">
+        <input type="text" name="email" id="email">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password">
         <button type="submit">Criar Conta</button>
       </form>
     </div>
