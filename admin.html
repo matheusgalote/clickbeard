@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+  <title>Admin</title>
+</head>
+<body>
+  <header class="header">
+    <h2>Admin</h2>
+  </header>
+
+  <section class="agendamentos">
+    <div class="card-agenda">
+      <span class="day">7</span>
+      <p>09:30</p>
+      <p>Marcos Assunção</p>
+      <p>Cabelo</p>
+    </div>
+    <div class="card-agenda">
+      <span class="day">7</span>
+      <p>11:00</p>
+      <p>Vanderlito</p>
+      <p>Barba</p>
+    </div>
+    <div class="card-agenda">
+      <span class="day">7</span>
+      <p>15:40</p>
+      <p>Kim Jon</p>
+      <p>Cabelo</p>
+    </div>
+    <div class="card-agenda">
+      <span class="day">7</span>
+      <p>17:10</p>
+      <p>Marco Valério</p>
+      <p>Alisamento</p>
+    </div>
+  </section>
+
+  <section class="create-employee">
+    <form action="">
+      <div class="infos">
+        <label for="name">Nome</label>
+        <input type="text" for="name" id="name">
+        <label for="idade">Idade</label>
+        <input type="number" for="idade" id="idade">
+        <label for="data">Data de contratação</label>
+        <input type="date" for="date" id="date">
+        <label for="salary">Salário</label>
+        <input type="number" form="salary" id="salary" step="0.1">
+      </div>
+      <span>Especialidade:</span>
+      <div class="especialidades">
+        <input type="checkbox" id="cabelo" name="cabelo" value="cabelo">
+        <label for="cabelereiro">Cabelo</label>
+        <input type="checkbox" id="barba" name="barba" value="barba">
+        <label for="barba">Barba</label>
+        <input type="checkbox" id="color" name="color" value="color">
+        <label for="color">Coloração</label>
+        <input type="checkbox" id="escova" name="escova" value="escova">
+        <label for="escova">Escova</label>
+        <input type="checkbox" id="alisamento" name="alisamento" value="alisamento">
+        <label for="alisamento">Alisamento</label>
+      </div>
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+</body>
+</html>
