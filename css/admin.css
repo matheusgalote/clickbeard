@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background: #076816;
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.header h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Agenda */
+.agendamentos {
+  padding: 10px calc((100% - 960px) / 2);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+.card-agenda {
+  width: 150px;
+  height: 150px;
+  background: rgba(192, 199, 183, 0.95);
+  text-align: center;
+}
+
+.card-agenda span {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  color: red;
+}
+
+.card-agenda p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+
+/* New */
+.create-employee {
+  padding: 10px calc((100% - 960px) / 2);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infos input {
+  display: block;
+  border: 2px solid #076816;
+  margin-bottom: 10px;
+}
+
+.especialidades {
+  margin: 20px 0;
+}
+
+.create-employee button[type="submit"] {
+  border: 2px solid #076816;
+  width: 100px;
+  height: 2rem;
+}
+
+.create-employee button[type="submit"]:hover {
+  background: #076816;
+  color: #fff;
+  border: 2px solid #8dc63f;
+}

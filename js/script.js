@@ -1,4 +1,5 @@
 import scrollSuave from "./modules/scroll-suave.js";
+import fetchAgendamento from "./modules/fetch-agendamentos.js"
 import ScrollAnima from "./modules/anima-scroll.js";
 import Modal from "./modules/modal-login.js";
 
@@ -12,3 +13,5 @@ modalLogin.init();
 
 const modalSignup = new Modal('[data-modal="abrir-signup"]', '[data-modal="fechar-signup"]', '[data-modal="signup"]');
 modalSignup.init();
+
+fetchAgendamento("./agendamentos.json")
