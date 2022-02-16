@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/hmfg.css">
+  <title>Admin</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Admin</h1>
+  </header>
+  <section class="agenda">
+    <h2>Agendamento</h2>
+    <div class="card-agenda">
+      <table class="table-agenda" border="1px">
+        <colgroup span="4" class="columns"></colgroup>
+        <tr>
+          <th>Cliente</th>
+          <th>Serviço</th>
+          <th>Horário</th>
+          <th>Funcionário</th>
+          <th>Data</th>
+        </tr>
+        <tr>
+          <td>Vinicius</td>
+          <td>Barba</td>
+          <td>08:40</td>
+          <td>Marco Antônio</td>
+          <td>17/02</td>
+        </tr>
+        <tr>
+          <td>Lucas</td>
+          <td>Corte de máquina</td>
+          <td>09:10</td>
+          <td>José Carlos</td>
+          <td>17/02</td>
+        </tr>
+        <tr>
+          <td>Antonio</td>
+          <td>Alisamento</td>
+          <td>15:10</td>
+          <td>João Caetano</td>
+          <td>19/02</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section class="create-employee">
+    <h2>Adicionar Funcionário</h2>
+    <form class="form">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome">
+      <label for="idade">Idade</label>
+      <input type="number" name="idade">
+      <label for="email">Email</label>
+      <input type="email" name="email">
+      <p>Especialidades:</p>
+      <div class="funcoes">
+        <input type="checkbox" name="corte_maquina">
+        <label for="corte_maquina">Corte de máquina</label>
+        <input type="checkbox" name="corte_tesoura">
+        <label for="corte_tesoura">Corte de tesoura</label>
+        <input type="checkbox" name="corte_navalha">
+        <label for="corte_navalha">Corte de navalha</label>
+        <input type="checkbox" name="barba">
+        <label for="barba">Barba</label>
+        <input type="checkbox" name="sobrancelha">
+        <label for="sobrancelha">Sobrancelha</label>
+        <input type="checkbox" name="alisamento">
+        <label for="alisamento">Alisamento</label>
+        <input type="checkbox" name="coloração">
+        <label for="coloracao">Coloração</label>
+      </div>
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+</body>
+</html>
