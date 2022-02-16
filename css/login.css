@@ -17,7 +17,7 @@ body {
   align-items: center;
 }
 
-.navtop div h1 {
+/* .navtop div h1 {
   flex: 1;
   font-size: 24px;
   padding: 0;
@@ -65,4 +65,8 @@ body {
 .content > div p {
   padding: 5px;
   margin: 0 0 10px 0;
+} */
+
+.agendamento {
+  padding: 10px calc((100% - 960px) / 2);
 }

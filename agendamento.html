@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/agendamento.css">
+  <title>Agendamento</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Agendamento</h1>
+  </header>
+  <section class="agendamento">
+    <form>
+      <p>Seviço</p>
+      <div class="funcoes">
+        <input type="checkbox" name="corte_maquina">
+        <label for="corte_maquina">Corte de máquina</label>
+        <input type="checkbox" name="corte_tesoura">
+        <label for="corte_tesoura">Corte de tesoura</label>
+        <input type="checkbox" name="corte_navalha">
+        <label for="corte_navalha">Corte de navalha</label>
+        <input type="checkbox" name="barba">
+        <label for="barba">Barba</label>
+        <input type="checkbox" name="sobrancelha">
+        <label for="sobrancelha">Sobrancelha</label>
+        <input type="checkbox" name="alisamento">
+        <label for="alisamento">Alisamento</label>
+        <input type="checkbox" name="coloração">
+        <label for="coloracao">Coloração</label>
+      </div>
+      <label for="data">Dia</label>
+      <input type="date" name="data">
+      <label for="horario">Horário</label>
+      <select name="horario" id="horario">
+        <option>08:00</option>
+        <option>08:50</option>
+        <option>09:40</option>
+        <option>10:30</option>
+        <option>11:20</option>
+        <option>12:10</option>
+        <option>15:00</option>
+        <option>15:50</option>
+      </select>
+      <label for="funcionario">Funcionário</label>
+      <select name="funcionario" id="funcionario">
+        <option value="marco">Marco</option>
+        <option value="andre">Andre</option>
+        <option value="vinicius">Vinicius</option>
+      </select>
+      <button type="submit">Agendar</button>
+    </form>
+  </section>
+</body>
+</html>

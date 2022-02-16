@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+.header {
+  background: #080f08;
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.header h1 {
+  color: #fff;
+}
+
+.agendamento {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.agendamento form > label,
+p {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.agendamento form > input,
+select,
+div {
+  margin-bottom: 20px;
+}
+
+.agendamento button[type="submit"] {
+  display: block;
+  background: #8dc63f;
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
