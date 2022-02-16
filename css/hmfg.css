@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  background: #080f08;
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.header h1 {
+  color: #fff;
+}
+
+/* Agenda */
+.agenda {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.agenda h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e3;
+  color: #364101;
+}
+
+.table-agenda {
+  border-color: #076816;
+  width: 600px;
+}
+
+.table-agenda tr {
+  margin-bottom: 10px;
+}
+
+.table-agenda th {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+
+.table-agenda td {
+  text-align: center;
+  padding: 0;
+}
+
+/* Add funcionário */
+.create-employee {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.create-employee h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e3;
+  color: #364101;
+}
+
+.form > label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form > input {
+  margin-bottom: 15px;
+  border: 1px solid #076816;
+  outline: none;
+}
+
+.form > p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.funcoes label {
+  margin-right: 3px;
+}
+
+.funcoes input {
+  margin-left: 3px;
+}
+
+.form button[type="submit"] {
+  margin-top: 20px;
+  border: 2px solid #076816;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
