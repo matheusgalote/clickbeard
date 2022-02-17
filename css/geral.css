@@ -306,6 +306,7 @@
 textarea {
   border: 2px solid #076816;
   margin-bottom: 20px;
+  outline: none;
 }
 
 .btn-enviar {
