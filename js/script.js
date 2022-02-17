@@ -13,3 +13,10 @@ modalLogin.init();
 const modalSignup = new Modal('[data-modal="abrir-signup"]', '[data-modal="fechar-signup"]', '[data-modal="signup"]');
 modalSignup.init();
 
+
+const btnAgendamento = document.querySelector('.btn-agendar');
+btnAgendamento.addEventListener('click', () => {
+    const modal = document.querySelector('[data-modal="login"]');
+    modal.classList.add('ativo');
+});
+
