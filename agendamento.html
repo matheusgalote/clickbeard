@@ -13,23 +13,16 @@
   </header>
   <section class="agendamento">
     <form>
-      <p>Seviço</p>
-      <div class="funcoes">
-        <input type="checkbox" name="corte_maquina">
-        <label for="corte_maquina">Corte de máquina</label>
-        <input type="checkbox" name="corte_tesoura">
-        <label for="corte_tesoura">Corte de tesoura</label>
-        <input type="checkbox" name="corte_navalha">
-        <label for="corte_navalha">Corte de navalha</label>
-        <input type="checkbox" name="barba">
-        <label for="barba">Barba</label>
-        <input type="checkbox" name="sobrancelha">
-        <label for="sobrancelha">Sobrancelha</label>
-        <input type="checkbox" name="alisamento">
-        <label for="alisamento">Alisamento</label>
-        <input type="checkbox" name="coloração">
-        <label for="coloracao">Coloração</label>
-      </div>
+      <label for="servicos">Seviço</label>
+      <select name="servicos" id="servicos">
+        <option value="corte_maquina">Corte de máquina</option>
+        <option value="corte_tesoura">Corte de tesoura</option>
+        <option value="corte_navalha">Corte de navalha</option>
+        <option value="barba">Barba</option>
+        <option value="sobrancelha">Sobrancelha</option>
+        <option value="alisamento">Alisamento</option>
+        <option value="coloracao">Coloração</option>
+      </select>
       <label for="data">Dia</label>
       <input type="date" name="data">
       <label for="horario">Horário</label>
