@@ -272,6 +272,7 @@
   font-family: "Raleway", sans-serif;
   color: #080f08;
   text-align: center;
+  padding-left: 10px;
 }
 
 .contato-info img {
@@ -345,4 +346,26 @@ textarea {
 [data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+/* Status horário Javascript */
+.horario {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+.aberto {
+  background: #8dc63f;
+}
+
+.fechado {
+  background: red;
 }

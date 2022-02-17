@@ -1,8 +1,10 @@
 import scrollSuave from "./modules/scroll-suave.js";
 import ScrollAnima from "./modules/anima-scroll.js";
 import Modal from "./modules/modal-login.js";
+import horario from "./modules/status.js";
 
 scrollSuave();
+horario();
 
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]')
 scrollAnima.init();

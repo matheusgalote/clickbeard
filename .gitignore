@@ -1,3 +1,2 @@
-php-login/.env
-php-admin/.env
-vendor
+/php-login/.env
+/php-admin/.env
