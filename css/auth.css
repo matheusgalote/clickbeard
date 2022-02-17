@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background-color: #f3f4f7;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #080f08;
+  height: 60px;
+  border: 0;
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a i {
+  margin-right: 5px;
+}
+
+.nav a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.loggedin {
+  padding: 10px calc((100% - 960px) / 2);
+}
+
+.loggedin h2 {
+  border-bottom: 1px solid #e0e0e3;
+  color: #364101;
+  padding-bottom: 10px;
+}

@@ -1,12 +1,18 @@
 <?php
 session_start();
 
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
-$DATABASE_NAME = 'phpadmin';
+require_once('../vendor/autoload.php');
 
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$host = $_ENV['DATABASE_HOST'];
+$db_user = $_ENV['DATABASE_USER'];
+$db_pass = $_ENV['DATABASE_PASS'];
+$db_name = $_ENV['DATABASE_NAME'];
+
+$con = mysqli_connect($host, $db_user, $db_pass, $db_name);
+
 if (mysqli_connect_errno() ) {
 	exit('Falha ao conectar ao MySQL: ' . mysqli_connect_error());
 }
