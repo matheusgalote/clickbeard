@@ -2,7 +2,7 @@
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'root';
 $DATABASE_PASS = '';
-$DATABASE_NAME = 'phplogin';
+$DATABASE_NAME = 'login';
 
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
@@ -44,7 +44,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
       $stmt->execute();
       echo 'Conta criada com sucesso!';
       sleep(8);
-      header('Location: index.html');
+      header('Location: ../index.html');
     } else {
       echo 'Não foi possível concluir o cadastro!';
 }
